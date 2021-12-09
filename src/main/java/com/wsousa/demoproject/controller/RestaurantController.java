@@ -1,10 +1,7 @@
 package com.wsousa.demoproject.controller;
 
-import com.wsousa.demoproject.domain.Employee;
-import com.wsousa.demoproject.domain.Restaurant;
 import com.wsousa.demoproject.dto.RestaurantDTO;
 import com.wsousa.demoproject.exceptions.RestaurantException;
-import com.wsousa.demoproject.mapper.RestaurantMapper;
 import com.wsousa.demoproject.service.RestaurantService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;

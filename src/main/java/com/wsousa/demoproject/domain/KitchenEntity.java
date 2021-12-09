@@ -23,6 +23,6 @@ public class KitchenEntity {
 
     @JsonIgnore
     @OneToOne(mappedBy="kitchen")
-    private Restaurant restaurant;
+    private RestaurantEntity restaurant;
 
 }

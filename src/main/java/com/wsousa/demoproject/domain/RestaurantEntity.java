@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Setter
 @Entity
 @Table(name="tb_restaurant")
-public class Restaurant implements Serializable {
+public class RestaurantEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "restaurant_seq")
@@ -23,4 +23,8 @@ public class Restaurant implements Serializable {
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "kitchen_id")
     private KitchenEntity kitchen;
+
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+    private UserEntity user;
 }
