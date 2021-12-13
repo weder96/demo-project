@@ -21,7 +21,7 @@ public class CityEntity {
     private String name;
 
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "city_id")
+    @JoinColumn(name = "state_id")
     private StateEntity state;
 
 }

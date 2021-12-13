@@ -27,4 +27,8 @@ public class RestaurantEntity implements Serializable {
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
     private UserEntity user;
+
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id")
+    private AddressEntity address;
 }

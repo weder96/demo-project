@@ -26,4 +26,8 @@ public class OrderedItemEntity {
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "product_id")
     private ProductEntity product;
+
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "ordered_id")
+    private OrderedEntity ordered;
 }
